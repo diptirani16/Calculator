@@ -1,38 +1,60 @@
 .App {
   text-align: center;
+  background-color: #c2c2d6;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator {
+    border: 2px solid #47476b;
+    padding: 5px;
+    background: black;
+    width: 320px;
+    position: relative;
+    margin: 10vh 38vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+    position: relative;
+    height: 65px;
+    width: 80px;
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    background: #4d4d4d;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    cursor: default;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#add, #subtract, #multiply, #divide, #decimal {
+  background-color: #666666;
 }
-
-.App-link {
-  color: #61dafb;
+.outputScreen {
+  font-size: 29px;
+    font-family: digital;
+    color: white;
+    text-align: right;
+    line-height: 35px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulaScreen{
+  min-height: 20px;
+    font-family: digital;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
+.jumbo{
+  width: 160px;
+}
+#clear{
+  background-color: rgb(172, 57, 57);
+}
+/* #equals {
+  background: rgb(0, 68, 102); 
+  position: absolute; 
+  height: 130px; 
+  bottom: 5px;
+} */
