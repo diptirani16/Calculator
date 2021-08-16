@@ -29,14 +29,14 @@ button{
   background-color: #666666;
 }
 .outputScreen {
-  font-size: 29px;
+    font-size: 29px;
     font-family: digital;
     color: white;
     text-align: right;
     line-height: 35px;
 }
 .formulaScreen{
-  min-height: 20px;
+    min-height: 20px;
     font-family: digital;
     font-size: 20px;
     color: orange;
@@ -52,9 +52,22 @@ button{
 #clear{
   background-color: rgb(172, 57, 57);
 }
-/* #equals {
-  background: rgb(0, 68, 102); 
-  position: absolute; 
-  height: 130px; 
-  bottom: 5px;
-} */
+@media screen and (max-width: 480px) {
+  .calculator {
+    margin: 0vw 2vh; 
+    border: 2px solid #47476b;
+    padding: 5px;
+    background: black;
+    width: 287px;
+    position: relative;
+  }
+  button{
+    position: relative;
+    height: 65px;
+    width: 70px;
+  }
+  .jumbo{
+    width: 140px;
+  }
+  
+}
