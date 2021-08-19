@@ -54,6 +54,7 @@ class App extends React.Component {
       if(Number.isFinite(value)) {  
         currentValue = this.Operators[currentOperator](currentValue, value) 
       } else currentOperator = value
+      return 0;
     })
     return [...arr, currentValue]
   }
